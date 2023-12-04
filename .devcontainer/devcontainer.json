@@ -17,7 +17,8 @@
 		"workbench.preferredDarkColorTheme": "Default Dark Modern",
 		"workbench.colorTheme": "Default Dark Modern",
 		"workbench.iconTheme": "material-icon-theme",
-		"files.autoSave": "off"
+		"files.autoSave": "afterDelay",
+		"files.autoSaveDelay": 500
 	},
 	// Use 'mounts' to make the cargo cache persistent in a Docker Volume.
 	// "mounts": [
