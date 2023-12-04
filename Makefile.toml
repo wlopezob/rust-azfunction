@@ -1,0 +1,12 @@
+[tasks.build]
+command = "sh"
+args = ["-c", "cargo build --release && cp target/release/handler ."]
+
+[tasks.run]
+command = "sh"
+args = ["-c", "cargo build --release && cp target/release/handler . && func start"]
+
+
+[tasks.deploy]
+command = "sh"
+args = ["-c", "cargo build --release --target=x86_64-unknown-linux-musl && cp target/x86_64-unknown-linux-musl/release/handler . && func azure functionapp publish rustfn --no-bundler"]
